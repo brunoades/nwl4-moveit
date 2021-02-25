@@ -1,0 +1,43 @@
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+.experienceBar span {
+    font-size: 1rem;
+}
+
+.experienceBar > div {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.experienceBar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--green);
+}
+
+span.currentExperienceTriangle {
+    position: absolute;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent var(--green) transparent;
+    transform: translate(-50%);
+}
+
+span.currentExperience {
+    position: absolute;
+    top: 12px;
+    transform: translate(-50%);
+    background: var(--green);
+    padding: 0.3rem;
+    border-radius: 5px;
+}
